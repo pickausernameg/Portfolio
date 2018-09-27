@@ -12,28 +12,72 @@ body{
 	background-repeat: no-repeat;
 }
 
-.header{
-	text-align: center;
+.nav-link{
+	margin: 20px;
 }
 
-.header a{
+.navbar a{
+	font-size: 20px;
+	transition: 300ms;
 	color: white;
+}
+
+.navbar a:hover{
+	border-bottom: 2px solid #ffffffa6;
 	text-decoration: none;
-	font-family: 'Emblema One';
-	font-size: 22px;
-	text-transform: uppercase;
+	color: white;
 }
 
-.HeadList{
-	list-style-type: none;
-	margin-top: 20px;
+.profile{
+  background-image: url(../images/profile.jpg);
+  width: 110px;
+  height: 110px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: auto;
+  border-radius: 100%;
+  border: 2px solid white;
 }
 
-.HeadList a:hover{
-	text-decoration: none;
+.header{
+	margin: auto;
+  width: 640px;
+  height: 210px; 
+  border-radius: 40px 40px 0px 0px;
+  background-image: linear-gradient(to bottom right, #ff000038, rgba(0, 123, 255, 0.37));
 }
 
-.HeadList li:active{
-	border-bottom: 1px solid white;
-  height: 40px;
+.space{
+	height: 20px;
+}
+
+.name{
+	color: white;
+}
+
+.space i{
+	font-size: 30px;
+  left: 20px;
+  top: 10px;
+  color: white;
+  position: relative;
+  transition: 200ms;
+}
+
+.space i:hover{
+	color: red;
+}
+
+.MenuHamb{
+	border: 1px solid rgba(0, 0, 0, 0.8);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.8);
+  list-style: none;
+  padding: 10px;
+  width: 70px;
+  position: absolute;
+  top: 38px;
+  margin-left: 19px;
 }
