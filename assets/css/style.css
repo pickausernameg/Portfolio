@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Emblema+One');
+@import url('https://fonts.googleapis.com/css?family=Teko');
 html, 
 body {
-    height: 100%;
-    margin:0px; 
-    padding:0px;
+  height: 100%;
+  margin:0px; 
+  padding:0px;
 }
 
 body{
 	background-image: url("../images/galaxy.jpg");
-	background-size: 100%;
+	background-size: auto;
 	background-repeat: no-repeat;
 }
 
@@ -64,20 +64,50 @@ body{
   transition: 200ms;
 }
 
+.MenuHamb{
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.58);
+  list-style: none;
+  padding: 0px;
+  position: absolute;
+  top: 26px;
+  display: none;
+}
+
+.MenuHamb a{
+	font-size: 19px;
+	color: white;
+	padding: 10px 20px;
+  display: list-item;
+  font-family: 'Teko';
+}
+
+.MenuHamb a:hover{
+	text-decoration: none;
+	color: white;
+	background: #ff000042;
+}
 .space i:hover{
 	color: red;
 }
 
-.MenuHamb{
-	border: 1px solid rgba(0, 0, 0, 0.8);
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  background: rgba(0, 0, 0, 0.8);
-  list-style: none;
-  padding: 10px;
-  width: 70px;
-  position: absolute;
-  top: 38px;
-  margin-left: 19px;
+.fa-bars:hover .MenuHamb{
+	display: block;
+}
+
+@media screen and (max-width: 762px){
+	.header{
+		width: 100%;
+	}
+
+	.navbar a{
+		margin: 0px;
+		padding: 0px;
+	}
+
+	.MenuHamb a{
+		font-size: 25px;
+	}
 }
