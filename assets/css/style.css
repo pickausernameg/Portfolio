@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Emblema+One');
+html, 
+body {
+    height: 100%;
+    margin:0px; 
+    padding:0px;
+}
+
+body{
+	background-image: url("../images/galaxy.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.header{
+	text-align: center;
+}
+
+.header a{
+	color: white;
+	text-decoration: none;
+	font-family: 'Emblema One';
+	font-size: 22px;
+	text-transform: uppercase;
+}
+
+.HeadList{
+	list-style-type: none;
+	margin-top: 20px;
+}
+
+.HeadList a:hover{
+	text-decoration: none;
+}
+
+.HeadList li:active{
+	border-bottom: 1px solid white;
+  height: 40px;
+}
