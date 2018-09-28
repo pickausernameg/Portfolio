@@ -44,7 +44,7 @@ body{
   width: 640px;
   height: 210px; 
   border-radius: 40px 40px 0px 0px;
-  background-image: linear-gradient(to bottom right, #ff000038, rgba(0, 123, 255, 0.37));
+  background-image: linear-gradient(to bottom right, #ff000038, rgba(0, 123, 255, 0.18));
 }
 
 .space{
@@ -55,7 +55,7 @@ body{
 	color: white;
 }
 
-.space i{
+.space .fa-bars{
 	font-size: 30px;
   left: 20px;
   top: 10px;
@@ -82,20 +82,107 @@ body{
 	padding: 10px 20px;
   display: list-item;
   font-family: 'Teko';
+  width: 130px;
+}
+
+.MenuHamb i{
+	color: white;
+	margin-right: 10px;
 }
 
 .MenuHamb a:hover{
 	text-decoration: none;
 	color: white;
 	background: #ff000042;
+	border-radius: 5px;
 }
-.space i:hover{
+.space .fa-bars:hover{
 	color: red;
 }
 
 .fa-bars:hover .MenuHamb{
 	display: block;
 }
+
+footer{
+	width: 100%;
+  height: 80px;
+  background: linear-gradient(to bottom,#00000012, #000000cc);
+  bottom: 0px;
+  position: relative;
+  transition: 200ms;
+}
+
+footer:hover{
+  background: #000000cf;
+}
+
+.footerText{
+  float: right;
+  margin: 25px;
+  color: #ffffffb8;
+  text-align: right;
+}
+
+.Projs{
+	display: -webkit-inline-box;
+	padding: 30px;
+	background: #ffffff3d;
+}
+
+.LinkToProj{
+	text-align: center;
+  margin: 40px 0px;
+}
+
+#btn1{
+	background-image: url("../images/projlink1.jpg");
+}
+
+#btn2{
+	background-image: url("../images/projlink2.jpg");
+}
+
+.btn{
+	width: 280px;
+  height: 160px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.btn:hover{
+  box-sizing: content-box;
+}
+
+.btn content{
+  position: relative;
+  top: 30px;
+  left: 60px;
+  font-size: 29px;
+  font-family: 'Teko';
+  color: black;
+  font-weight: bold;
+}
+
+.Fade{
+	position: relative;
+  width: 280px;
+  height: 50px;
+  top: 76px;
+  right: 12px;
+  background: linear-gradient(to bottom right,#ffffff00, #ffffff63);
+  border-radius: 6px;
+}
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 762px){
 	.header{
@@ -110,4 +197,14 @@ body{
 	.MenuHamb a{
 		font-size: 25px;
 	}
+
+	.MenuHamb i{
+		display: none;
+	}
+
+	.Projs{
+		display: block;
+		margin: 70px 0px;
+	}
+
 }
