@@ -22,4 +22,16 @@ $(document).ready(function(){
     } // End if
   });
 
+  $(window).scroll(function(){
+
+    // Set scroll to first box
+    if ($(this).scrollTop() > 250) {
+      $(".nav").css({"position" : "fixed", "z-index" : "99", "top" : "0px",});
+      $("#Sub").css({"display" : "block"}); 
+    }else{
+      $(".nav").css({"position" : "relative"}); 
+      $("#Sub").css({"display" : "none"});
+    }
+  })
+
 });
