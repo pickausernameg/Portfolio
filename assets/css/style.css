@@ -126,11 +126,43 @@ footer:hover{
   text-align: right;
 }
 
-.Projs{
+.wrapper {
+  width: 70%;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.roles {
+  color: white;
+  font-size: 20px;
+  height: 230px;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.roles div {
+  height: 100%;
+  transition: margin-top 1s ease-in-out;
+}
+
+
+.About{
 	display: inline-block;
 	padding: 30px;
 	background: #ffffff3d;
 	border-radius: 30px;
+	border-bottom: 2px solid #ffffff30;
+  margin-bottom: 20px;	
+}
+
+.Projs{
+	display: inline-block;
+	padding: 30px;
+	background: #ffffff17;
+	border-radius: 30px;
+	border-bottom: 2px solid #ffffff30;
+  margin-bottom: 20px;
 }
 
 .LinkToProj{
@@ -221,6 +253,15 @@ footer:hover{
 	.Projs{
 		display: block;
 		margin: 70px 0px;
+	}
+
+	.wrapper{
+		width: 100%;
+	}
+
+	.roles{
+		height: 330px;
+		font-size: 17px;
 	}
 
 }
