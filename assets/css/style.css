@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Teko');
+@import url('https://fonts.googleapis.com/css?family=K2D:800i');
+
 html, 
 body {
   height: 100%;
@@ -97,7 +99,7 @@ body{
 	border-radius: 5px;
 }
 .space .fa-bars:hover{
-	color: red;
+	color: #ff0000c9;
 }
 
 .fa-bars:hover .MenuHamb{
@@ -120,19 +122,21 @@ footer:hover{
 .footerText{
   float: right;
   margin: 25px;
-  color: #ffffffb8;
+  color: white;
   text-align: right;
 }
 
 .Projs{
-	display: -webkit-inline-box;
+	display: inline-block;
 	padding: 30px;
 	background: #ffffff3d;
+	border-radius: 30px;
 }
 
 .LinkToProj{
 	text-align: center;
   margin: 40px 0px;
+  display: inline-block;
 }
 
 #btn1{
@@ -174,7 +178,15 @@ footer:hover{
   border-radius: 6px;
 }
 
+.AllProj{
+	display: inline-block;
+}
 
+.ProjTitle{
+	font-size: 30px;
+	color: white;
+	font-family: 'K2D';
+}
 
 
 
@@ -185,6 +197,10 @@ footer:hover{
 
 
 @media screen and (max-width: 762px){
+	body{
+		background-image: url("../images/galaxyMobile.jpg");
+	}
+
 	.header{
 		width: 100%;
 	}
